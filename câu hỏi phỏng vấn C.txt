@@ -1,0 +1,8 @@
+Câu hỏi phỏng vấn C .
+
+1, có bao nhiêu phân vùng nhớ , kể tên đặc điểm của phân vùng nhớ . 
+có 5 phân vùng nhớ .
+2 so sánh giữa macro và function .
+3 biến static .
+4 struct va union .
+5 con trỏ hàm , void , null .
