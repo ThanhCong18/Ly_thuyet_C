@@ -1,0 +1,100 @@
+câu 1 : có bao nhiêu phân vùng nhớ , đặc điểm của từng vùng . 
+
+- có 5 phân vùng nhớ text , Data , Bss , Heap , Stack .
+1.Vùng nhớ Text (text segment) .
+-  tên khác là text segment hay code segment.
+-  là vùng nhớ chỉ đọc .
+-  là nơi mà lưu trữ các mã lệnh đã được biên dịch của các chương trình máy tính. 
+2.Vùng nhớ Data .
+- Phần này được chia nhỏ ra làm 2 phần: vùng nhớ hằng (không thay đổi được giá trị hay còn gọi là vùng nhớ read only) và vùng nhớ chuyên lưu các biến toàn cục.
+- vùng nhớ hằng :
+ 	. Đây là vùng nhớ chỉ cho phép đọc và ghi vào lần đầu, sau đó giá trị được ghi sẽ tồn tại trong suốt chương trình mà không thể thay đổi giá trị.
+        Nếu chúng ta cố tình thay đổi sẽ gây ra lỗi.
+     . vùng nhớ chỉ đọc 
+- vùng nhớ chuyên lưu các biến toàn cục.
+	. Vùng nhớ này chuyên lưu trữ các biến toàn cục, các biến static đã được khai báo giá trị.
+     . Các biến trong vùng nhớ này có đặc điểm sẽ được tồn tại trong cả quá trình chương trình chạy và có thể đọc và ghi được.
+3.Vùng nhớ BSS .
+- Hay còn gọi là vùng Uninitialized Data Segment.
+- Vùng nhớ này chuyên lưu trữ các biến toàn cục, các biến static chưa được khai báo giá trị.
+  Các biến trong vùng nhớ này có đặc điểm sẽ được tồn tại trong cả quá trình chương trình chạy và có thể đọc và ghi được.
+4 Vùng nhớ Stack . 
+- Vùng nhớ này chuyên được cấp phát cho các biến cục bộ trong hàm. 
+- Đặc điểm của các biến này là có thể đọc ghi được . nhưng sẽ chỉ tồn tại khi chương trình hàm còn chạy .
+  khi chương trình hàm kết thúc sẽ tự động được giải phóng vùng nhớ.
+5 Vùng nhớ Heap .
+- Vùng nhớ Heap được sử dụng để cấp phát bộ nhớ động. 
+- Đặc chưng cú pháp khi sử dụng cấp phát động trong ngôn ngữ C là từ khóa calloc, malloc. 
+- Đặc điểm của vùng nhớ khi sử dụng cấp phát động là nó sẽ không tự mất đi trong quá trình chạy,
+  và chúng ta phải tự giải phóng vùng nhớ này bằng từ khóa free.Nếu không giải phóng thì vùng nhớ này có thể bị đầy gây ra lỗi.
+
+câu 2 : Biến Static .
+
++ Biến static trong khai báo biến cục bộ
+
+    . Khi 1 biến cục bộ được khai báo với từ khóa static. 
+    . Biến sẽ chỉ được khởi tạo 1 lần duy nhất và tồn tại suốt thời gian chạy chương trình.
+    . Giá trị của nó không bị mất đi ngay cả khi kết thúc hàm. Tuy nhiên khác với biến toàn cục có thể gọi trong tất cả mọi nơi trong chương trình, thì biến 	 cục bộ static chỉ có thể được gọi trong nội bộ hàm khởi tạo ra nó. 
+    . Mỗi lần hàm được gọi, giá trị của biến chính bằng giá trị tại lần gần nhất hàm được gọi.
++ Biến static trong khai báo biến toàn cục và khai báo hàm .
+
+    . Mỗi project thường sẽ được viết trên nhiều File vì mục đích phân chia module cũng như là để dễ bảo trì.
+    . Do có nhiều File nên rất có thể ở các File sẽ có sự trùng lặp trong cách đặt tên biến. 
+    . Để tránh sự cố sai sót này người ta đưa ra khái niệm biến toàn cục tĩnh và hàm tĩnh.
+
+    - Biến toàn cục tĩnh sẽ chỉ có thể được truy cập và sử dụng trong File khai báo nó, các File khác không có cách nào truy cập được.
+    - Hàm tĩnh sẽ chỉ có thể gọi trong File khai báo nó, các File khác không có cách nào gọi hàm này được.
+
+câu 3 : so sánh giữu macro và funcion .
+
+1. Macro:
+	- Được xử lý bởi preprocessor
+	- Thay thế đoạn code được khai báo macro vào bất cứ chỗ nào xuất hiện macro đó
+	- VD: #define SUM(a,b)     (a+b)
+	- Preprocessor khi gặp bất kỳ lời gọi SUM(first+last) nào thì thay ngay bằng (first+last) .
+2. Inline
+	- Được xử lý bởi compiler
+	- Được khai báo với từ khóa inline
+	- Khi compiler thấy bất kỳ chỗ nào xuất hiện inline function, nó sẽ thay thế chỗ đó bởi định nghĩa của hàm đã được compile tương ứng.
+     - Phần được thay thế không phải code mà là đoạn code đã được compile .
+3. Hàm bình thường .
+Khi thấy hàm được gọi, compiler sẽ phải lưu con trỏ chương trình PC hiện tại vào stack pointer; chuyển con trỏ PC tới hàm được gọi, thực hiện hàm đó xong và lấy kết quả trả về; sau đó quay lại vị trí ban đầu trong stack pointer trước khi gọi hàm và tiếp tục thực hiện chương trình.
+- Như có thể thấy, cách này khiến chương trình tốn thời gian hơn là chỉ cần thay thế đoạn code đã được compile (cách của inline function)
+	So sánh macro và Function:
+	+ Marco thường được sử dụng với các tác vụ đơn giản, trong khi đó function được sử dụng với các tác vụ dài và phức tạp hơn. 
+	+ Marco không có kiểu trả về, trong khi function có kiểu tra về. 
+	+ Marco được định nghĩa qua #define và không cần khai báo trước, trong khi function phải khai báo định nghĩa và định nghĩa trước khi sử dụng 
+	+ Về tốc độ và kích thước thì thông thường marco sẽ nhanh hơn và nhỏ hơn function 
+	+Tuy vây, marco cũng có hạn chế về việc không được kiểm tra lỗi, không được phân biệt kiểu dữ liệu sẽ dẫn đến cách lỗi không mong muốn khi sử dụng sai   
+	cách .
+
+câu 4 : ruct and union . và sự khác nhau giữa struct và union .
+
+- struct là gì :
+	 - struct là kiểu dữ liệu do người dùng tự định nghĩa . bao gồm các member với nhiều kiểu dữ liệu khác nhau ( int , float , ..).
+- union là gì : 
+	- tương tự struct .
+	- union là kiểu dữ liệu do người dùng tự định nghĩa . bao gồm các member với nhiều kiểu dữ liệu khác nhau ( int , float , ...).
+- khác nhau giữa struct và union .
+Về mặt ý nghĩa, struct và union cơ bản giống nhau. Tuy nhiên, về mặt lưu trữ trong bộ nhớ, chúng có sự khác biệt rõ rệt như sau:
+. Struct :
+	  - Dữ liệu các thành viên lưu ở ô nhớ khác nhau trên Ram .
+	  - Do đó kích thước của 1 struct tối thiểu bằng kích thước các thành viên cộng lại tại vì còn phụ thuộc vào bộ nhớ đệm (struct padding) .
+. Union 
+       - Dữ liệu các thành viên sẽ dùng chung 1 vùng nhớ. Kích thước của union được tính là kích thước lớn nhất của kiểu dữ liệu trong union .
+       - Việc thay đổi nội dung của 1 thành viên sẽ dẫn đến thay đổi nội dung của các thành viên khác.
+
+Câu 5 : con trỏ là gì : 
+
++ khái niệm con trỏ là gì : 
+- con trỏ (pointer) là những biến lưu trữ địa chỉ bộ nhớ của những biến khác.
+- khi khai báo con trỏ phải gán địa chỉ cho con trỏ , nếu không thì ta sẽ gán NULL cho con trỏ , đế biết được con trỏ đang trỏ đến vị trí nào .
++ con trỏ NULL.
+- Con trỏ NULL là con trỏ lưu địa chỉ 0x00000000. Tức địa chỉ bộ nhớ 0, có ý nghĩa đặc biệt, cho biết con trỏ không trỏ vào đâu cả.
+- khi khai báo con trỏ chưa biết gán giá trị . nên gán bằng NULL .
++ Con trỏ Void .
+- là con trỏ đặc biệt .
+- con trỏ void là con trỏ có thể trỏ tới tất cả các biến .
+- con trỏ void chỉ có thể lưu địa chỉ , muốn lấy giá trị của địa chỉ thì phải ép kiểu cho nó . 
++ Con trỏ cấp 2 ( pointer to pointer) .
+- Pointer to pointer là một loại con trỏ dùng để lưu trữ địa chỉ của 1 biến con trỏ khác. 
