@@ -1,0 +1,59 @@
+TOÁN TỬ TRONG NGÔN NGỮ LẬP TRÌNH C .
+
+1 - toán tử số học : 
+
++ , - , * , / , %(chia lấy dư) .
+
+2 - toán tử tăng giảm .: 
+
+x++ : thực hiện lệnh trước rồi mới tăng lên 1 đơn vị 
+
+++x : tăng x lên 1 đơn vị trước rồi mới thực hiện lệnh .
+
+note : x++ , ++x có ý nghĩa khi đặt trong khối lệnh . 
+
+còn khi không trong khối lệnh thì x++ hay ++x đều có ý nghĩa là tăng lên 1 đơn vị . 
+
+3 - toán tử gán .
+
++= , -= , *= , /= , %= , = .
+
+ví dụ a+=b -> a = a+b ;
+
+4 - toán tử quan hệ .  (trả về kết quả true hoặc false ) . 
+(dùng trong khối lệnh if else .)
+ ==         so sánh bằng . 
+ >	    lớn hơn 
+ <	    nhỏ hơn 
+ != 	    khác 
+ >=         lớn  hơn bằng 
+ <=         nhỏ hơn bằng
+
+5 - toán tử logic ( trả về hai gia trị true or false , tức 0 và 1 ).
+(dùng trong khối lệnh if else .)
+toán tử && : là toán tử AND . trả về true khi tất cả toán hạng đều đúng .
+toán tử || : là toán tử OR  .  trả về true khi ít nhất 1 toán hạng đúng . 
+toán tử !  : là toán tử NOT . phủ định giá trị của toán hạng  .
+
+ví dụ . nhập điểm = 9 , thì !diem = 0 ;
+
+6 - toán tử thao tác bít . 
+
+&  		phép AND
+| 		phép OR 
+~ 		phép phủ định NOT .
+^ 		phép XOR .
+<<		dịch trái 
+>>		dịch phải . 
+
+
+phép and : thằng nào and với 0 đều bằng 0 ; 
+phép or  : thằng nào or với 1 đều bằng 1 .
+phép not : 1 thành 0 và 0 thành 1 .
+phép xor : 2 bit giống nhau xor nhau bằng 0 , ngược lại là 1 . 
+
+phép dịch trái : các bit dịch sang phía bên trái n lần , sau đó thêm bit 0 vào bên phải . 
+phép dịch phải : - dịch các bit sang phải n lần , sau đó thêm bit 0 vào trái . nếu là số dương . 
+                 - đối với số âm là bit thì thêm vào bit 1 .
+
+cách xác định số âm : kiểu dữ liệu (int , char , short , ..vv) thì dựa vào bit trọng số cao (hay còn gọi là bit dấu ) nếu bit 1 là số âm . bit 0 là số dương . 

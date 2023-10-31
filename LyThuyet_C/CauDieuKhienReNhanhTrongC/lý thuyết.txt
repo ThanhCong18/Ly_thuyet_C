@@ -1,0 +1,65 @@
+1 - Câu điều kiện if .
+
+if(điều kiện )
+{
+	nếu điều kiện đúng thì thực hiện lệnh . 
+}.
+
+2 - câu điều kiện IF ELSE . 
+
+if(điều kiện )
+{
+	// statment 1 ;
+	// câu lệnh thực hiện nếu điều kiện đúng .
+}
+else{
+	//statement 2 ; 
+	// câu lệnh thực hiện khi điều kiện sai . 
+}
+
+3 - câu lệnh if ... else if ..... else .
+
+if(test expression 1)     // kiểm tra điều kiện từ trên xuống dưới . điều kiện nào đúng sẽ thoát ra khỏi câu điều kiện luôn . 
+{
+    // statement 1 .
+    // nếu điều kiện đúng thì thực hiện lệnh và thoát ra khỏi vòng lặp .
+}
+else if ( test expression 2 )
+{
+    // statement 2 .
+    // nếu điều kiện đúng thì thực hiện lệnh và thoát ra khỏi vòng lặp .
+}
+else if ( test expression 3 )
+{
+    // statement 3 .
+    // nếu điều kiện đúng thì thực hiện lệnh và thoát ra khỏi vòng lặp .
+}
+else 
+{
+    // statement n.
+    // nếu điều kiện đúng thì thực hiện lệnh và thoát ra khỏi vòng lặp .
+}
+
+4 - TOÁN TỬ BA NGÔI . 
+
+bieu_thuc 1 ? bieu_thuc 2 : bieu_thuc 3 ;
+
+- nếu biểu thức 1 là đúng ,  thì kết quả trả về là giá trị biểu thức 2 .
+- nếu biểu thức 1 là sai  ,  thì kết quả trả về là giá trị biểu thức 3 .  
+
+5 - CÂU LỆNH SWITCH CASE
+
+switch ( điều kiện )            // điều kiện bắt buộc là giá trị hằng , có thể là biểu thức nhưng kết quả phải là hằng số .  
+{
+     case constant 1 : 
+     // khối lệnh .
+     break ; 
+     case constant 2 : 
+     // khối lệnh .
+     break ;
+     .
+     .
+     . 
+     default : 
+     // khối lệnh . 
+}

@@ -1,0 +1,43 @@
+KIỂU DỮ LIỆU & BIẾN 
+
+1 - LÝ THUYẾT : 
+
+- kiểu dữ liệu chính : là phần xác định các giá trị mà một biến có thể nhận  , hay giá trị mà một hàm trả về . 
+
+- kiểu dữ liệu của một biến , xác định kích thước (số byte ) của biến đó . 
+
+- kiểu int 4byte , float 4 byte , char 1 byte , short 2 byte , long 8 byte , double 8 byte .
+
+2 - BIẾN : 
+
+  - khai báo  : kiểu dữ liệu _ tên biến = giá trị .
+
+3 - HẰNG :
+
+  - const kiểu dữ liệu_tên biến = giá trị .
+
+  ví dụ : const int max = 100  ; 
+
+4 - MACRO : 
+
+cách khai báo :  #define <tên hằng số> = <Giá trị> (lưu ý không có dấu ;).
+
+  - định nghĩa bằng #define . 
+
+  - chúng ta có thể định nghĩa #define một giá trị hoặc  #define của một hàm  . 
+
+5 - Hàm PRINTF 
+
+  - câu lệnh in ra màn hình . 
+
+6 - Hàm SCANF 
+
+  - câu lệnh nhập , (không chấp nhận khoảng trắng) .
+
+7 - Hàm GETS 
+
+  - nhập vào từ bàn phím . ( chấp nhận cả khoảng trắng ) . 
+
+  lưu ý : khi có lệnh scanf trước lệnh gets , thì phải thêm lệnh fflush(stdin) .
+
+  - khi nhập 1 giá trị vào scanf sau đó enter , thì enter sẽ nhảy vào bộ nhớ đệm , nên dùng fflush(stdin) để xóa . 

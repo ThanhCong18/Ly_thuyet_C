@@ -1,0 +1,11 @@
+LÝ THUYẾT CẤP PHÁT ĐỘNG .  
+
+1 - hàm malloc , hàm calloc . 
+
+2 - malloc : void * malloc (số lượng byte) : ví dụ int *pt = malloc(10*sizeof(int)).
+
+3 - calloc : void * calloc (số lượng phần tử , kích thước của một phần tử ) :  ví dụ int *pt = calloc(10,sizeof(int)).
+
+4 - free(pt) giải phong bộ nhớ . < trong đó pt là địa chỉ của con trỏ pt > .
+
+5 - vùng địa chỉ của cấp phát động không bị mất đi khi ra khỏi hàm . 

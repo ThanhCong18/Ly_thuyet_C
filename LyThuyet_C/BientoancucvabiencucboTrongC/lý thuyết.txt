@@ -1,0 +1,4 @@
+biến cục bộ static , gần giống với biến toàn cục :
+
+- nhưng chỉ có phạm vi trong hàm khởi tạo ra nó . 
+- còn biến biến toàn cục có phạm vi cả chương trình .

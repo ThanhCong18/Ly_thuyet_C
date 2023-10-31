@@ -1,0 +1,47 @@
+1 . con trỏ là gì : con trỏ là 1 biến , cũng có địa chỉ trên Ram , giá trị của con trỏ chính là vùng địa chỉ mà con trỏ đó trỏ tới . 
+
+2 . cách khai báo con trỏ :
+
+<kieu du lieu> * < tên con trỏ > . 
+
+ví dụ : int *pt = &x hoặc int *pt 
+		          pt = &x ; 
+
+3 . ta có thể thay đổi giá trị của 1 biến thông qua con trỏ . *pt = x ;
+
+4 . toán tử tăng giảm con trỏ .
+
+- P++ có nghĩa là nhảy đến địa chỉ tiếp theo trong ô nhớ . chứ không phải tăng lên 1 đơn vị .
+
+5 . mối quan hệ giữa mảng vào con trỏ . 
+
+&x[0] <=> p    ; x[0] <=> p[0] = *pt  ;
+&x[1] <=> P+1  ; x[1] <=> p[1] ; *(pt+1);
+&x[i]  <=> p+i ;
+quan trọng .
+
+phần này rất quan trọng . 
+
+6 . hàm trả về con trỏ . 
+
+khai bao : 
+
+kieu tra ve * ten ham ()
+{
+     code .
+}
+
+7 . con trỏ hằng và hẳng con trỏ : 
+
+con trỏ hằng ví dụ : const int *pt : con trỏ hằng là con trỏ chỉ đọc , và không được phép ghi giá trị vào vùng nhớ đó . và có thể trỏ tới bất cứ đâu . 
+
+hằng con trỏ  : 
+
+int * const pt :  hằng con trỏ , chỉ có thể trỏ tới 1 địa chỉ duy nhất , đọc và ghi bình thường  .
+
+
+8 . con trỏ cấp 2 :  
+
+con trỏ cấp 2 là con trỏ , trỏ tới địa chỉ của con trỏ cấp 1 .
+
+ví dụ : int **ptr = &contro .

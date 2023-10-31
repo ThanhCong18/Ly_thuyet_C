@@ -1,0 +1,14 @@
+1 - ý nghĩa của bitfield : để tiết kiệm bộ nhớ cho struct và tính kích thước của struct .
+
+2 - ví dụ : 
+
+struct time = {
+
+   unsigned int hours : 5 ;   // ý nghĩa :5 là 5 bít , phạm vi giá trị 2^5 - 1 
+   unsigned int minutes : 6 ; 
+   unsigned int seconds : 6 ;  
+}
+
+3 - bitfield không dùng cho kiểu float chỉ dùng cho số nguyên . 
+
+4 - bitfield thường ít được sử dụng . 

@@ -1,0 +1,5 @@
+1 - chỉ thị hàm tệp lệnh ( #include , #define , typedef : định nghĩa ra kiểu dữ liệu mới ) . 
+
+2 - chỉ thị định nghĩa cho tên (#define macro ). 
+
+3 - chỉ thị biên dịch có điều kiện (#if , #elif , #else , #endif) .

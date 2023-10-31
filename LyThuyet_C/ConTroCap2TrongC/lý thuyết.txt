@@ -1,0 +1,40 @@
+1 - con trỏ cấp 2 là gì : là con trỏ lưu trữ địa chỉ của biến con trỏ khác . 
+
+2 - con trỏ cấp 2 : cần chú ý 2 điều .
+
++ thông qua con trỏ cấp 2 ta cũng có thể thay đổi được ,  địa chỉ của con trỏ cấp 1 trỏ đến . 
+
++ thông qua con trỏ cấp 2 ta cũng có thể thay đổi được  , giá trị tại vùng nhớ mà con trỏ cấp 1 trỏ đến .
+
+
+3 - mảng con trỏ cấp 1 . < tức là mảng chứa con trỏ cấp 1 > . <mới> .
+
+	vd : cách khai báo : int *pt[3] ;
+
+	scanf ("%d",&pt[0][i]) ;  trong đó pt[0] là con trỏ , [i] là chỉ số 0 , 1 , .. , n - 1 .
+
+4 - cấp phát động mảng 2 chiều .
+
+ - cấp phát từng hàng  , từng  cột theo calloc . 
+
+5 - con trỏ hàm . 
+ 
+5.1 - con trỏ hàm là 1 biến lưu trữ địa chỉ của 1 hàm ( tên hàm cx chính là địa chỉ của một hàm ) . có thể trỏ đến hàm mà không cần gọi hàm . 
+
+- con trỏ hàm chỉ trỏ đến hàm có cấu trúc tương ứng .
+
+5.2 - cách khai báo con trỏ hàm : 
+
+khai báo tường minh . 
+
+<kieu tra ve> (*<tên con trỏ>)(<tham số hàm>).
+
+không tường minh .
+ 
+<dùng để định nghĩa ra 1 kiểu dữ liệu mới>
+
+typedef int (*func_t)(int , int) .
+
+
+
+

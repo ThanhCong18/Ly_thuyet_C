@@ -1,0 +1,9 @@
+1 . danh sách liên kết bao gồm các node : mỗi node bao gồm giá trị và 1 con trỏ . 
+
+2 . truy cập vào danh sách liên kết phải truy cập từ đầu .
+
+3 . cấp phát động và con trỏ là bắt buộc . 
+
+4 . pt->next là phần tử tiếp theo . 
+
+5 . 

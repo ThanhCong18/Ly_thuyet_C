@@ -1,0 +1,36 @@
+1 - VÒNG LẶP FOR 
+
+for ( giá trị khởi tạo , điều  kiện  lặp , bước nhảy )
+{
+
+	// khối lệnh .
+}
+
+
+2 - VÒNG LẶP WHILE 
+
+while (điều kiện )    // vòng  while chỉ có 1 điều kiện .
+{
+	
+}
+
+ví dụ : 
+
+int main()
+{
+int i = 0 ;
+while (i<10)
+{
+	printf("bui van cong");
+	i++;
+}
+}
+
+3 - từ khóa break and continue .
+
+
+- từ khóa break : sẽ thoát khỏi vòng lặp ngay lập tức khi gặp nó trong vòng  lặp .
+
+- từ khóa continue : bỏ qua lần lặp hiện tại trong vòng lặp , kiểm tra điều kiện thực hiện vòng lặp tiếp theo , nếu như điều kiện vẫn được thỏa mãn . 
+
+- từ khóa extern : chia sẻ tài nguyên giữa các file với nhau . 

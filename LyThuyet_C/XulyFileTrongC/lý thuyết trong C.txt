@@ -1,0 +1,34 @@
+file có 2 loại : file txt , file binary .
+
+thao tác 1 : mở file .
+
+- khai báo con trỏ FILE * ten contro . 
+
+- fptr = fopen("duong dan" , mode). 
+
+thao tác 2 : đọc ghi file .
+
+đọc file : 
+
+- fgets () ; đọc ký tên đến khi gặp kết thúc chuỗi hoặc ký tự xuống dòng .
+
+- fscanf() : đọc ký tự tên đến khi gặp khoảng cách .
+
+ghi file : 
+
+- fprint() : ghi theo định dạng .
+
+- fputs() : ghi theo dạng chuỗi .
+
+thao tác 3 : đóng file . 
+
+fclose(controfile) .
+
+
+
+
+file binary . 
+
+- 2 hàm fwrite() . 
+
+- 2 hàm fread() . 

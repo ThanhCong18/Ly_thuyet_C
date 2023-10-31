@@ -1,0 +1,8 @@
+hàm getchar() 
+- cho phép nhập 1 ký tự từ bàn phím sau đó nhấn enter thì chương trình mới thực hiện . 
+hàm getche()
+- cho phép nhập 1 ký tự từ bàn phím (nhập sau khi ký tự được nhập) mà không cần nhấn enter .
+- hiển thị ký tự khi nhập
+hàm getch()
+- cho phép nhập 1 ký tự từ bàn phím (nhập sau khi ký tự được nhập) mà không cần nhấn enter .
+- không hiển thị ký tự khi nhập .

@@ -1,0 +1,17 @@
+1 - Mảng là gì : Mảng tập hợp tuần tự các phần tử có cùng kiểu dữ và các phần tử được lưu trữ trong một dãy các ô nhớ liên tiếp trên bộ nhớ . 
+
+2 - địa chỉ của mảng chính là tên mảng  và cũng chính là phần tử đầu tiên của mảng .
+
+3 - cách truyền mảng vào hàm :  ví dụ   void nhapmang (int a[] , int sophantu) .
+
+4 - cách khai báo mảng 1 chiều : 
+
+cách 1 : unsigned char [5] = { 0x01 , 0x02 , 0x03 , 0x04 , 0x05} ;
+
+cách 2 : unsigned char [] = { 0x01 , 0x02 , 0x03 , 0x04 , 0x05} ;
+
+cách 3 : unsigned char [5] 
+ 
+unsigned char [0] = 
+unsigned char [1] = 
+unsigned char [2] = 

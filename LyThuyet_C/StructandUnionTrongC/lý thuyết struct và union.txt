@@ -1,0 +1,42 @@
+1 . khái niệm struct là gì : là kieueru dữ liệu tự định nghĩa bao gồm nhiều thành phần có thể thuộc nhiều kiểu dữ liệu khác nhau .
+
+2 .  khai báo không tường minh : ( định nghĩa ra 1 kiểu dữ liệu mới )
+
+typedef struct 
+{
+    DataNamenumber 1 ; 
+
+    DataNamenumber 2 ; 
+
+} structName ; 
+
+
+ví dụ :
+ 
+typedef struct 
+{
+    dataNamenumber 1 ; 
+    dataNamenumber 2 ; 
+} student ; 
+
+
+student sv1 ; 
+student sv2 ; 
+
+student mang[10] ;
+
+3 . từ khóa typedef định nghĩa kiểu dữ liệu mới :
+
+- typedef char uint8 .  // char 1 byte <=> 8 bit .
+- giới thiệu thư viện stdint.h .
+
+4. truy xuất dữ liệu struct .
+
+- nếu khai báo biến bình thường ta dùng dấu . để truy xuất dữ liệu 
+- nếu khai báo biến con trỏ ta dùng  dấu -> để truy xuất dữ liệu . 
+
+5 . kích thước của struct : 
+
+- sử dụng alignment . hàm parama pack .
+
+6 . struct vẫn sử dụng để khai báo biến , mảng , vẫn truyền vào các hàm scanf , gets ;

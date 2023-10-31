@@ -1,0 +1,11 @@
+1-hàm gồm 1 nhóm các câu lệnh , cùng xử lý một nhiệm vụ cụ thể nào đó . 
+
+
+2 - có 2 loại hàm : 
+- hàm do lập trình viên tự định nghĩa . 
+- hàm được đóng sẵn thành các thư viện .
+
+3 - nếu hàm có kiểu trả về thì phải có return tương ứng .  
+
+4 - hàm không có giá trị trả về : là kiểu void . không có return .
+  - hàm có giá trị trả về : là int , float ... có return .
